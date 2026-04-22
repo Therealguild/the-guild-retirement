@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>The Guild</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
+
+<style>
+html{scroll-behavior:smooth;}
+body{
+  margin:0;
+  background:#070707;
+  color:#EAEAEA;
+  font-family:'Poppins', sans-serif;
+  overflow-x:hidden;
+}
+
+.panel{
+  height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  position:relative;
+  overflow:hidden;
+}
+
+.bg{
+  position:absolute;
+  width:100%;
+  height:100%;
+  background-size:cover;
+  background-position:center;
+  transform:scale(1.06);
+  filter:brightness(0.85) contrast(1.1);
+  transition:transform 1.8s ease-out;
+}
+
+.panel.active .bg{transform:scale(1);}
+
+.panel::before{
+  content:'';
+  position:absolute;
+  width:100%;
+  height:100%;
+  background:linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(0,0,0,0.3));
+}
+
+.content{
+  position:relative;
+  max-width:900px;
+  padding:25px;
+  opacity:0;
+  transform:translateY(40px);
+  transition:0.7s ease;
+}
+
+.panel.active .content{
+  opacity:1;
+  transform:translateY(0);
+}
+
+h1,h2{font-family:'Playfair Display', serif;}
+h1{font-size:64px;}
+h2{font-size:42px;}
+
+p{
+  font-size:18px;
+  color:#CFCFCF;
+  line-height:1.7;
+}
+
+h1,h2,p,.btn{
+  text-shadow:0 4px 20px rgba(0,0,0,0.6);
+}
+
+.gold{color:#C6A96B;}
+
+.line{
+  width:70px;
+  height:2px;
+  background:#C6A96B;
+  margin:20px auto;
+}
+
+.btn-group{
+  margin-top:25px;
+  display:flex;
+  justify-content:center;
+}
+
+.btn{
+  padding:12px 28px;
+  border:1px solid #C6A96B;
+  color:#fff;
+  text-decoration:none;
+  transition:0.3s;
+  background:rgba(0,0,0,0.15);
+}
+
+.btn:hover{
+  background:#C6A96B;
+  color:#070707;
+}
+
+.footer{
+  padding:80px;
+  text-align:center;
+  color:#777;
+}
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+<section class="panel active">
+<div class="bg" style="background-image:url('https://i.postimg.cc/MKcNWrQf/IMG-20260417-WA0010.jpg')"></div>
+<div class="content">
+<h1>THE GUILD</h1>
+<p class="gold">A Place of Peace, Dignity, and Belonging</p>
+<div class="line"></div>
+<div class="btn-group">
+<a href="tel:0822943550" class="btn">Book a Visit</a>
+</div>
+</div>
+</section>
+
+<!-- WELCOME -->
+<section class="panel">
+<div class="bg" style="background-image:url('https://i.postimg.cc/nzrLjJb6/IMG-20260414-WA0033.jpg')"></div>
+<div class="content">
+<h2>🌿 Welcome to The Guild</h2>
+<div class="line"></div>
+<p>
+A Place of Peace, Dignity, and Belonging  
+Set within beautifully kept gardens and peaceful walkways, The Guild is more than a place to live — it is a community where people are truly cared for.  
+Here, every path leads you through calm surroundings, every garden reflects loving attention, and every resident is valued and respected.
+</p>
+</div>
+</section>
+
+<!-- UNITS -->
+<section class="panel">
+<div class="bg" style="background-image:url('https://i.postimg.cc/hj9gPMV0/IMG-20260421-WA0000.jpg')"></div>
+<div class="content">
+<h2>Our Units</h2>
+<div class="line"></div>
+<p>
+Our units are thoughtfully designed to offer comfort, privacy, and independence.  
+Each space is clean, well-maintained, and positioned within peaceful surroundings — allowing residents to feel at home while being part of a caring community.
+</p>
+</div>
+</section>
+
+<!-- MISSION -->
+<section class="panel">
+<div class="bg" style="background-image:url('https://i.postimg.cc/SRDBJPRG/IMG-20260421-WA0001.jpg')"></div>
+<div class="content">
+<h2>🌸 Our Mission</h2>
+<div class="line"></div>
+<p>
+To Care, To Serve, To Uplift  
+At The Guild, we are committed to:  
+Honouring each resident with dignity and respect  
+Creating a safe and peaceful environment  
+Building a true sense of community  
+Serving with kindness, patience, and integrity
+</p>
+</div>
+</section>
+
+<!-- COMMUNITY -->
+<section class="panel">
+<div class="bg" style="background-image:url('https://i.postimg.cc/MphhMVZ8/IMG-20260421-WA0002.jpg')"></div>
+<div class="content">
+<h2>🌿 A Living, Breathing Community</h2>
+<div class="line"></div>
+<p>
+The beauty of The Guild is not only in its surroundings, but in its people.  
+In shared spaces, along garden paths, and in quiet daily moments, a spirit of care and connection is present.  
+This is a place where people look out for one another, where kindness is natural, and where life is lived with meaning.
+</p>
+</div>
+</section>
+
+<!-- GARDENS -->
+<section class="panel">
+<div class="bg" style="background-image:url('https://i.postimg.cc/TwcS4sVY/IMG-20260421-WA0003.jpg')"></div>
+<div class="content">
+<h2>🌼 Our Gardens</h2>
+<div class="line"></div>
+<p>
+Our gardens are a source of daily peace — lovingly maintained, ever-changing, and full of life.  
+They offer a place to walk, to reflect, and to simply be still.
+</p>
+</div>
+</section>
+
+<!-- AUTO LOAD ALL IMAGES -->
+<div id="gallery"></div>
+
+<!-- FINAL -->
+<section class="panel">
+<div class="bg" style="background-image:url('https://i.postimg.cc/s28DG261/IMG-20260421-WA0083.jpg')"></div>
+<div class="content">
+<p>
+At The Guild, we are guided by values of care, humility, and quiet service — creating a space where people can live with peace, dignity, and a sense of belonging.
+</p>
+<div class="btn-group">
+<a href="tel:0822943550" class="btn">Book a Visit</a>
+</div>
+</div>
+</section>
+
+<div class="footer">
+Developed by Creative Online Branding
+</div>
+
+<script>
+const imageList = [
+"https://i.postimg.cc/rFsbfQKM/IMG-20260421-WA0004.jpg",
+"https://i.postimg.cc/PqWFC7Fq/IMG-20260421-WA0005.jpg",
+"https://i.postimg.cc/8c5ynzkr/IMG-20260421-WA0006.jpg",
+"https://i.postimg.cc/6QXMx056/IMG-20260421-WA0007.jpg",
+"https://i.postimg.cc/Sx0rcr9P/IMG-20260421-WA0008.jpg",
+"https://i.postimg.cc/ydrhxXBW/IMG-20260421-WA0009.jpg",
+"https://i.postimg.cc/vBD57DtT/IMG-20260421-WA0010.jpg",
+"https://i.postimg.cc/tgvxgpGC/IMG-20260421-WA0011.jpg",
+"https://i.postimg.cc/Z5V9f4RL/IMG-20260421-WA0012.jpg",
+"https://i.postimg.cc/7P0fFghv/IMG-20260421-WA0013.jpg",
+"https://i.postimg.cc/2Sc6QGch/IMG-20260421-WA0014.jpg",
+"https://i.postimg.cc/zXpXNprv/IMG-20260421-WA0015.jpg",
+"https://i.postimg.cc/KzXmfHnH/IMG-20260421-WA0016.jpg",
+"https://i.postimg.cc/yY6sL9Sn/IMG-20260421-WA0017.jpg",
+"https://i.postimg.cc/2Sbptxjc/IMG-20260421-WA0018.jpg",
+"https://i.postimg.cc/LXSrnKtb/IMG-20260421-WA0019.jpg",
+"https://i.postimg.cc/3R9bNyJN/IMG-20260421-WA0020.jpg",
+"https://i.postimg.cc/ZKXsWz4k/IMG-20260421-WA0021.jpg",
+"https://i.postimg.cc/J4XvczpF/IMG-20260421-WA0022.jpg",
+"https://i.postimg.cc/brx0rWRm/IMG-20260421-WA0023.jpg",
+"https://i.postimg.cc/pVfKfND1/IMG-20260421-WA0024.jpg",
+"https://i.postimg.cc/xCrbmgq1/IMG-20260421-WA0025.jpg",
+"https://i.postimg.cc/SQfzX6hT/IMG-20260421-WA0026.jpg",
+"https://i.postimg.cc/SK9nm8dB/IMG-20260421-WA0027.jpg",
+"https://i.postimg.cc/y8gdT9wr/IMG-20260421-WA0028.jpg",
+"https://i.postimg.cc/5yK4BNpf/IMG-20260421-WA0029.jpg",
+"https://i.postimg.cc/R01vPTXM/IMG-20260421-WA0030.jpg",
+"https://i.postimg.cc/7hhDZrDb/IMG-20260421-WA0031.jpg",
+"https://i.postimg.cc/fT6ZDPr1/IMG-20260421-WA0032.jpg",
+"https://i.postimg.cc/cH4GFGvt/IMG-20260421-WA0033.jpg",
+"https://i.postimg.cc/fbC6tq8c/IMG-20260421-WA0034.jpg",
+"https://i.postimg.cc/WzBKLB1W/IMG-20260421-WA0035.jpg",
+"https://i.postimg.cc/BQDZLsH0/IMG-20260421-WA0036.jpg",
+"https://i.postimg.cc/Pq6dsqsz/IMG-20260421-WA0037.jpg",
+"https://i.postimg.cc/5Nw19gW3/IMG-20260421-WA0038.jpg",
+"https://i.postimg.cc/W3BLTF97/IMG-20260421-WA0039.jpg",
+"https://i.postimg.cc/mZ9WVjDd/IMG-20260421-WA0040.jpg",
+"https://i.postimg.cc/wTzZ2dnm/IMG-20260421-WA0041.jpg",
+"https://i.postimg.cc/XYHPnBqk/IMG-20260421-WA0042.jpg",
+"https://i.postimg.cc/4dt2v85P/IMG-20260421-WA0043.jpg",
+"https://i.postimg.cc/BZTwXVtQ/IMG-20260421-WA0044.jpg",
+"https://i.postimg.cc/yYnQT3F2/IMG-20260421-WA0045.jpg",
+"https://i.postimg.cc/gJ9N0VWb/IMG-20260421-WA0046.jpg",
+"https://i.postimg.cc/7hw93qbb/IMG-20260421-WA0047.jpg",
+"https://i.postimg.cc/xj3t0NFM/IMG-20260421-WA0048.jpg",
+"https://i.postimg.cc/CLv78T0K/IMG-20260421-WA0049.jpg",
+"https://i.postimg.cc/d0Cjghy7/IMG-20260421-WA0050.jpg",
+"https://i.postimg.cc/d352Gdz7/IMG-20260421-WA0051.jpg",
+"https://i.postimg.cc/hvXj3dX7/IMG-20260421-WA0052.jpg",
+"https://i.postimg.cc/xjXMZJDG/IMG-20260421-WA0053.jpg",
+"https://i.postimg.cc/g2WhrgXc/IMG-20260421-WA0054.jpg",
+"https://i.postimg.cc/MTvMg44j/IMG-20260421-WA0055.jpg",
+"https://i.postimg.cc/Pfvv4gYV/IMG-20260421-WA0056.jpg",
+"https://i.postimg.cc/RVc6rwPg/IMG-20260421-WA0057.jpg",
+"https://i.postimg.cc/W18dzTcG/IMG-20260421-WA0058.jpg",
+"https://i.postimg.cc/SRcshpG2/IMG-20260421-WA0081.jpg",
+"https://i.postimg.cc/wjwBH2D7/IMG-20260421-WA0082.jpg",
+];
+
+const gallery = document.getElementById('gallery');
+
+imageList.forEach(src=>{
+  const section = document.createElement('section');
+  section.className = 'panel';
+  section.innerHTML = `<div class="bg" style="background-image:url('${src}')"></div>`;
+  gallery.appendChild(section);
+});
+
+const panels = document.querySelectorAll('.panel');
+
+function activatePanel(){
+const trigger = window.innerHeight * 0.7;
+panels.forEach(panel=>{
+const top = panel.getBoundingClientRect().top;
+if(top < trigger && top > -window.innerHeight * 0.7){
+panel.classList.add('active');
+}else{
+panel.classList.remove('active');
+}
+});
+}
+
+window.addEventListener('scroll', activatePanel);
+activatePanel();
+</script>
+
+</body>
+</html>
